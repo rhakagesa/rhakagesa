@@ -32,7 +32,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <Meta />
         <Links />
       </head>
-      <body className="bg-white">
+      <body className="bg-white px-10 sm:px-20 md:px-52 xl:px-96">
         <header className="sticky top-0">
           <Navigation />
         </header>
