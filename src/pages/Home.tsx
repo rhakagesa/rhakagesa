@@ -33,7 +33,7 @@ function Home() {
           </strong>
         </h1>
         <hr
-          className={`${effectTransitionScale} ${transitionAndDuration} my-4 w-60 border-[1px] sm:border-2 rounded-full sm:w-96 mx-auto border-gray-400 `}
+          className={`${effectTransitionScale} ${transitionAndDuration} my-4 w-60 border-[1px] sm:border-2 rounded-full sm:w-96 mx-auto border-gray-400`}
         />
         <p
           className={`${effectTransitionRight} ${transitionAndDuration} mt-4 text-gray-800 sm:text-xl/relaxed `}
