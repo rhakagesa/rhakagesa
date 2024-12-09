@@ -1,24 +1,26 @@
+import ContentContainer from "../components/about/ContentContainer";
+import Profile from "../components/about/Profile";
+import WorkExperience from "../components/about/WorkExperience";
+
 function About() {
   return (
-    <div className="max-w-screen-xl h-screen mx-auto flex flex-col items-center justify-center">
-      <div className="mx-auto max-w-xl">
-        <h1 className="text-3xl text-gray-500 font-extrabold sm:text-5xl">
-          About Me
-        </h1>
+    <div className="max-w-screen-xl mx-auto flex flex-col items-center justify-center pt-28 sm:pt-32">
 
-        <p className="mt-4 text-gray-800 sm:text-xl/relaxed">
-          Hello everyone, my name is Rhaka and now live in Gresik, East Java. I
-          am self-taught and have experience in web development for 1+ years. I
-          am currently in the process of learning about web development. I am
-          looking for a company that can help me to learn and work together. I
-          am looking forward to working with you.
-        </p>
-      </div>
-      <div className="mx-auto max-w-xl">
-        <h1 className="text-3xl text-gray-500 font-extrabold sm:text-5xl">
-          Tools and Technologies
-        </h1>
-      </div>
+      <ContentContainer title="Summary">
+      <Profile 
+          imgsrc="../src/assets/pp-img.png" 
+          title="Rhaka Gemilang Sentosa" 
+          desc="Hello everyone, my name is Rhaka, and I currently live in Gresik, East Java. 
+          I am a self-taught web developer with over 1 year of experience and a Computer Engineering graduate with 5 years of work experience outside my field of study. 
+          Now, I am pursuing a career change to web development, aiming to become a full-stack developer. 
+          I am dedicated to continuously improving my skills and am eager to take on new challenges. 
+          I am looking for a company that can support my growth and allow me to contribute in an innovative work environment. 
+          I am excited about the opportunity to work and learn together." />
+      </ContentContainer>
+      
+      <ContentContainer title="Experience">
+        <WorkExperience />
+      </ContentContainer>
     </div>
   );
 }
