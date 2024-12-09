@@ -17,7 +17,7 @@ function Home() {
   useEffect(() => {
     setTimeout(() => {
       setLoading(false);
-    }, 500);
+    }, 250);
   }, []);
 
   return (
@@ -25,9 +25,13 @@ function Home() {
       <div className="mx-auto max-w-xl text-center">
         <h1
           className={`${effectTransitionLeft} ${transitionAndDuration} text-3xl text-gray-500 font-extrabold sm:text-5xl `}
-        > Rhaka Gemilang
+        >
+          {" "}
+          Rhaka Gemilang
           <br></br>
-          <strong className="font-extrabold text-gray-800 sm:block">Portofolio Website.</strong>
+          <strong className="font-extrabold text-gray-800 sm:block">
+            Portofolio Website.
+          </strong>
         </h1>
         <hr
           className={`${effectTransitionScale} ${transitionAndDuration} my-4 w-60 border-[1px] sm:border-2 rounded-full sm:w-96 mx-auto border-gray-400`}
