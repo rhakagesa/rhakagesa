@@ -12,7 +12,7 @@ function Profile({
       <img
         src={imgsrc}
         alt=""
-        className="aspect-square w-24 object-contain sm:self-start border-b-2 border-r-2 rounded-full"
+        className="aspect-square w-28 sm:w-32 object-contain sm:self-start border-b-2 border-r-2 rounded-full"
       />
 
       <div>
