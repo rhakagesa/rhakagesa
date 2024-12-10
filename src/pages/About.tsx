@@ -1,6 +1,8 @@
+import Certification from "../components/about/Certification";
 import ContentContainer from "../components/about/ContentContainer";
-import EducationCertification from "../components/about/EducationCertification";
+import Education from "../components/about/Education";
 import Profile from "../components/about/Profile";
+import ToolTechnology from "../components/about/ToolTechnology";
 import WorkExperience from "../components/about/WorkExperience";
 
 function About() {
@@ -22,10 +24,19 @@ function About() {
       <ContentContainer title="Experience" note="in other fields">
         <WorkExperience />
       </ContentContainer>
-
-      <ContentContainer title="Education & Certification">
-        <EducationCertification />
+    
+      <ContentContainer title="Education">
+        <Education />
       </ContentContainer>
+
+      <ContentContainer title="Certification">
+        <Certification/>
+      </ContentContainer>
+
+      <ContentContainer title="Tools and Technologies">
+        <ToolTechnology/>
+      </ContentContainer>
+
     </div>
   );
 }

@@ -2,10 +2,12 @@ export interface AboutData {
   jobTitle: string;
   company: string;
   imgsrc: string;
-  location: string;
+  location?: string;
   startDate: string;
   endDate: string;
-  jobDesc: string[];
+  jobDesc: string[] ;
+  link?: string;
+  credentials?: string;
 }
 
 export const workExperience: AboutData[] = [
@@ -57,9 +59,9 @@ export const workExperience: AboutData[] = [
   },
 ];
 
-export const educationCertification: AboutData[] = [
+export const education: AboutData[] = [
   {
-    jobTitle: "Bachelor of Engineering",
+    jobTitle: "Bachelor of Engineering, Computer Engineering",
     company: "Universitas Brawijaya",
     imgsrc: "../src/assets/ub-logo.jpeg",
     location: "Malang, East Java",
@@ -69,6 +71,121 @@ export const educationCertification: AboutData[] = [
       "GPA 3.58/4.00",
       "Faculty of Computer Science",
       "Majoring in Computer Engineering",
+      "Thesis : Deteksi Pergerakan Bola Mata untuk Pemilihan Empat Menu Menggunakan Metode Facial Landmark dengan Ekstraksi Fitur LBP dan Klasifikasi K-NN"
     ],
+    link: "https://j-ptiik.ub.ac.id/index.php/j-ptiik/article/view/7157/3454"
   },
 ];
+
+export const certifications: AboutData[] = [
+   {
+    jobTitle: "Belajar Dasar-Dasar DevOps",
+    company: "Dicoding Indonesia",
+    imgsrc: "../src/assets/dicoding-logo.jpg",
+    startDate: "Issued Oct 2024",
+    endDate: "Expired Oct 2027",
+    location: "Online",
+    credentials: "07Z6485DWPQR",
+    jobDesc: [
+      "Introduction to DevOps", "DevOps Principles", "CALMS Framework", "DevOps Practices",
+    ],
+    link: "https://www.dicoding.com/certificates/07Z6485DWPQR"
+  },
+  {
+    jobTitle: "Belajar Jaringan Komputer untuk Pemula",
+    company: "Dicoding Indonesia",
+    imgsrc: "../src/assets/dicoding-logo.jpg",
+    startDate: "Issued Oct 2024",
+    endDate: "Expired Oct 2027",
+    location: "Online",
+    credentials: "1RXY2LWW1XVM",
+    jobDesc: [
+      "Basic Networking Concepts", "Network Models", "IP Address", "Domain Name System", "Network Security",
+    ],
+    link: "https://www.dicoding.com/certificates/1RXY2LWW1XVM"
+  },
+  {
+    jobTitle: "Bootcamp Back-End Developer",
+    company: "Kelas.work by Kelas.com",
+    imgsrc: "../src/assets/kelas-logo.jpg",
+    startDate: "Issued Jul 2024",
+    endDate: "",
+    location: "Online",
+    credentials: "CERT-051C3AEB",
+    jobDesc: [
+      "Introduction to Back-End Development in Web Development", "Git Commands", "Fundamental JavaScript", "Database using PostgreSQL", "Using ORM with Sequelize", "Build a RESTful API with ExpressJS", "Using EJS for Template Engine","Authentication and Authorization using JWT", "Write API Documentation with Markdown", "TDD with Jest", "Testing API with Postman"
+    ],
+    link: "https://drive.google.com/file/d/1QOuNiPsrJszxrS3IRcrsW5QDmhhqFX_M/view?usp=sharing"
+  },
+  {
+    jobTitle: "Belajar Membuat Aplikasi Web dengan React",
+    company: "Dicoding Indonesia",
+    imgsrc: "../src/assets/dicoding-logo.jpg",
+    startDate: "Issued Oct 2023",
+    endDate: "Expired Oct 2026",
+    location: "Online",
+    credentials: "EYX4YK7OJZDL",
+    jobDesc: [
+      "Introduction to React", "Basic Concepts of React", "React UI Components", "Stateful Components"
+    ],
+    link: "https://www.dicoding.com/certificates/EYX4YK7OJZDL"
+  },
+  {
+    jobTitle: "Belajar Membuat Front-End Web untuk Pemula",
+    company: "Dicoding Indonesia",
+    imgsrc: "../src/assets/dicoding-logo.jpg",
+    startDate: "Issued Oct 2023",
+    endDate: "Expired Oct 2026",
+    location: "Online",
+    credentials: "KEXLLYKN0XG2",
+    jobDesc: [
+      "Browser Object Model and DOM Manipulation", "Event Handling", "Data Storage with Web Storage"
+    ],
+    link: "https://www.dicoding.com/certificates/KEXLLYKN0XG2"
+  },
+  {
+    jobTitle: "Belajar Dasar Pemrograman JavaScript",
+    company: "Dicoding Indonesia",
+    imgsrc: "../src/assets/dicoding-logo.jpg",
+    startDate: "Issued Sep 2023",
+    endDate: "Expired Sep 2026",
+    location: "Online",
+    credentials: "81P27VO6JZOY",
+    jobDesc: [
+      "Introduction and Fundamentals of JavaScript ", "Data Structure", "Object Oriented Programming", "Functional Programming", "Module", "Error Handling", "Asynchronous Programming", "Node Package Manager", "JavaScript Testing",
+    ],
+    link: "https://www.dicoding.com/certificates/81P27VO6JZOY"
+  },
+  {
+    jobTitle: "Belajar Dasar Pemrograman Web",
+    company: "Dicoding Indonesia",
+    imgsrc: "../src/assets/dicoding-logo.jpg",
+    startDate: "Issued Sep 2023",
+    endDate: "Expired Sep 2026",
+    location: "Online",
+    credentials: "53XE4NE0RZRN",
+    jobDesc: [
+      "Introduction and Fundamentals of HTML", " Introduction and Fundamentals of CSS", "Layout Reponsive with Flexbox",
+    ],
+    link: "https://www.dicoding.com/certificates/53XE4NE0RZRN"
+  },
+
+]
+
+export const logosIcon: string[]= [
+  "../src/assets/ts-logo.svg",
+  "../src/assets/nodejs-logo.svg",
+  "../src/assets/react.svg",
+  "../src/assets/vue-logo.svg",
+  "../src/assets/tailwindcss-logo.svg",
+  "../src/assets/expressjs-logo.svg",
+  "../src/assets/postgresql-logo.svg",
+  "../src/assets/mongodb-logo.png",
+  "../src/assets/mysql-logo.svg",
+  "../src/assets/prisma-logo.svg",
+  "../src/assets/sequelize-logo.svg",
+  "../src/assets/jest-logo.png",
+  "../src/assets/postman-logo.png",
+  "../src/assets/git-logo.svg",
+  "../src/assets/vscode-logo.svg",
+]

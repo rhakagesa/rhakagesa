@@ -1,12 +1,12 @@
 import { useState } from "react";
 import { AboutData } from "../../database/about-data";
-function DropdownContent({ data }: { data: AboutData[] }) {
+function DropdownContent({ data }: { data: AboutData[]}) {
   const [expand, setExpand] = useState(false);
   const [selected, setSelected] = useState(0);
 
   const buttonExpand = (index: number): string =>
     expand && index === selected
-      ? "transition-all duration-1000 -rotate-180"
+      ? "transition-all duration-300 -rotate-180"
       : "";
   const expandEffect = (index: number): string =>
     expand && index === selected ? "block" : "hidden";
@@ -43,11 +43,16 @@ function DropdownContent({ data }: { data: AboutData[] }) {
                     <p className="text-xs sm:text-sm font-thin">
                       {item.startDate} - {item.endDate}
                     </p>
+                    {item.credentials && (
+                      <p className="text-xs sm:text-sm font-thin">
+                        Credential ID {item.credentials}
+                      </p>
+                    )}
                   </span>
                 </p>
               </div>
               <svg
-                className={`size-5 w-1/12 transition duration-300 ${buttonExpand(
+                className={`size-5 w-1/12 ${buttonExpand(
                   index
                 )}`}
                 xmlns="http://www.w3.org/2000/svg"
@@ -68,12 +73,43 @@ function DropdownContent({ data }: { data: AboutData[] }) {
                 index
               )} text-xs sm:text-base text-gray-700 list-disc list-inside`}
             >
+              {item.credentials && (
+               <p>Module that have been learned :</p> 
+              )}
               {item.jobDesc.map((desc, index) => (
                 <li key={index}>{desc}</li>
               ))}
             </ul>
+
+            {item.link && 
+              <a
+                  className="group relative inline-flex items-center overflow-hidden rounded-b-md bg-gray-400 px-8 py-3 text-white hover:bg-gray-600  active:bg-gray-700"
+                  href={item.link}
+                  target="_blank"
+                  >
+                  <span className="absolute -end-full transition-all group-hover:end-4">
+                    <svg
+                      className="size-5 rtl:rotate-180"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="2"
+                        d="M17 8l4 4m0 0l-4 4m4-4H3"
+                      />
+                    </svg>
+                  </span>
+                  <span className="text-xs sm:text-sm font-semibold transition-all group-hover:me-4"> Details </span>
+              </a>}
           </div>
-        ))}
+        ))
+        }
+        
+
     </div>
   );
 }
