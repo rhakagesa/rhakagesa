@@ -1,3 +1,5 @@
+import { useInView } from "motion/react";
+import { useRef } from "react";
 import Certification from "../components/about/Certification";
 import ContentContainer from "../components/about/ContentContainer";
 import Education from "../components/about/Education";
@@ -6,9 +8,21 @@ import ToolTechnology from "../components/about/ToolTechnology";
 import WorkExperience from "../components/about/WorkExperience";
 
 function About() {
+  const ref = useRef(null);
+  const isInView = useInView(ref, {once: true});
+
+  const effectTransitionLeft: string = isInView
+  ? "translate-x-0 opacity-100" : "-translate-x-full opacity-0"
+const effectTransitionRight: string = isInView
+  ? 
+  "translate-x-0 opacity-100" : "translate-x-full opacity-0"
+
+const transitionAndDuration: string = "transition-all duration-1000"; 
+
+
   return (
-    <div className="max-w-screen-xl mx-auto flex flex-col items-center justify-center pt-28 sm:pt-32">
-      <ContentContainer title="Summary">
+    <div className="max-w-screen-xl mx-auto flex flex-col items-center justify-center pt-28 sm:pt-32" ref={ref}>
+      <ContentContainer title="Summary" className={`${effectTransitionLeft} ${transitionAndDuration}`}>
         <Profile
           imgsrc="../src/assets/pp-img.png"
           title="Rhaka Gemilang Sentosa"
@@ -21,19 +35,19 @@ function About() {
         />
       </ContentContainer>
 
-      <ContentContainer title="Experience" note="in other fields">
+      <ContentContainer title="Experience" note="in other fields" className={`${effectTransitionRight} ${transitionAndDuration}`}>
         <WorkExperience />
       </ContentContainer>
     
-      <ContentContainer title="Education">
+      <ContentContainer title="Education" className={`${effectTransitionLeft} ${transitionAndDuration}`}>
         <Education />
       </ContentContainer>
 
-      <ContentContainer title="Certification">
+      <ContentContainer title="Certification" className={`${effectTransitionRight} ${transitionAndDuration}`}>
         <Certification/>
       </ContentContainer>
 
-      <ContentContainer title="Tools and Technologies">
+      <ContentContainer title="Tools and Technologies" className={`${effectTransitionLeft} ${transitionAndDuration}`}>
         <ToolTechnology/>
       </ContentContainer>
 
