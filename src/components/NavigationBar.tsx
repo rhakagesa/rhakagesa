@@ -21,14 +21,14 @@ const resource: { name: string; path: string }[] = [
 
 function NavigationBar() {
   return (
-    <div className="fixed w-full top-10 z-50 flex items-center justify-center">
-      <div className="w-min h-min border-[1px] sm:border-[3px] border-gray-400 rounded-3xl px-5 py-4 bg-white bg-opacity-80">
+    <header className="fixed w-full top-10 z-50 flex items-center justify-center">
+      <div className="w-min h-min border-[1px] sm:border-[3px] border-gray-400 rounded-3xl px-5 py-4 bg-white bg-opacity-85">
         <nav className="flex gap-4">
           {resource &&
             resource.map((item, index) => (
               <Link
                 to={item.path}
-                className="text-xs sm:text-lg font-medium text-gray-500 hover:text-gray-800"
+                className="text-xs sm:text-lg font-bold text-gray-500 hover:text-gray-800"
                 key={index}
               >
                 {item.name}
@@ -36,7 +36,7 @@ function NavigationBar() {
             ))}
         </nav>
       </div>
-    </div>
+    </header>
   );
 }
 

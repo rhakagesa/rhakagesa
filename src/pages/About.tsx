@@ -7,7 +7,7 @@ import WorkExperience from "../components/about/WorkExperience";
 
 function About() {
   return (
-    <div className="max-w-screen-xl mx-auto flex flex-col items-center justify-center pt-28 sm:pt-32">
+    <section className="max-w-screen-xl mx-auto flex flex-col items-center justify-center pt-28 sm:pt-32">
       <ContentContainer title="Summary">
         <Profile
           imgsrc="../src/assets/pp-img-2.png"
@@ -36,7 +36,7 @@ function About() {
       <ContentContainer title="Tools and Technologies">
         <ToolTechnology />
       </ContentContainer>
-    </div>
+    </section>
   );
 }
 

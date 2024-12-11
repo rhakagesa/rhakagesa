@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { AboutData } from "../../database/about-data";
-function DropdownContent({ data }: { data: AboutData[]}) {
+function DropdownContentCard({ data }: { data: AboutData[]}) {
   const [expand, setExpand] = useState(false);
   const [selected, setSelected] = useState(0);
 
@@ -36,17 +36,17 @@ function DropdownContent({ data }: { data: AboutData[]}) {
                 </h3>
                 <p className="text-xs sm:text-base text-gray-700 font-semibold flex items-center">
                   <span className="flex flex-col">
-                    <p>{item.company}</p>
-                    <p className="text-xs sm:text-sm font-medium">
+                    <span>{item.company}</span>
+                    <span className="text-xs sm:text-sm font-medium">
                       {item.location}
-                    </p>
-                    <p className="text-xs sm:text-sm font-thin">
+                    </span>
+                    <span className="text-xs sm:text-sm font-thin">
                       {item.startDate} - {item.endDate}
-                    </p>
+                    </span>
                     {item.credentials && (
-                      <p className="text-xs sm:text-sm font-thin">
+                      <span className="text-xs sm:text-sm font-thin">
                         Credential ID {item.credentials}
-                      </p>
+                      </span>
                     )}
                   </span>
                 </p>
@@ -114,4 +114,4 @@ function DropdownContent({ data }: { data: AboutData[]}) {
   );
 }
 
-export default DropdownContent;
+export default DropdownContentCard;

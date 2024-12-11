@@ -1,5 +1,5 @@
 import { workExperience } from "../../database/about-data";
-import DropdownContent from "./DropdownContent";
+import DropdownContent from "./DropdownContentCard";
 
 function WorkExperience() {
   return <DropdownContent data={workExperience} />;
