@@ -1,8 +1,22 @@
 import ContactForm from "../components/contact/ContactForm";
+import { useRef } from "react";
+import { useInView } from "motion/react";
 function Contact() {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true });
+
+  const effectTransitionLeft: string = isInView
+    ? "translate-x-0 opacity-100"
+    : "-translate-x-full opacity-0";
+
+  const transitionAndDuration: string = "transition-all duration-1000";
+
   return (
     <section className="max-w-screen-xl mx-auto flex flex-col items-center justify-center pt-28 sm:pt-32">
-      <div className="mx-auto max-w-xl text-center">
+      <div
+        ref={ref}
+        className={`max-w-xl my-5 text-center mx-auto ${effectTransitionLeft} ${transitionAndDuration}`}
+      >
         <h1 className="sm:text-xl my-5 text-gray-800">
           Any Question and feedback? don't hesitate to contact me through this
           form or you can also find me on this platforms.

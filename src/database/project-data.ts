@@ -9,7 +9,7 @@ export interface ProjectData {
 
 export const realProjects: ProjectData[] = [
   {
-    imgsrc: "../src/assets/vue-logo.svg",
+    imgsrc: "../src/assets/bustek-logo.png",
     title: "Proyeksi Kirim App",
     company: "PT. Bumi Sari Teknologi",
     desc: "I developed a web-based application to enhance the efficiency of shipment administration, which was previously done manually using Excel. The application is built with Vue for the Front-End and Express for the Back-End, and is deployed on Vercel. The database is managed using Supabase and ORM Prisma, with the source code stored on GitHub. This solution addresses issues such as data input errors and simplifies access to necessary information for report recipients.",

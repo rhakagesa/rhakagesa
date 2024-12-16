@@ -1,7 +1,56 @@
+import { useRef } from "react";
+import emailjs from "@emailjs/browser";
+import Swal from "sweetalert2";
+
 function ContactForm() {
+  const form = useRef<HTMLFormElement>(null);
+
+  const sendEmail = (e: React.FormEvent) => {
+    e.preventDefault();
+
+    if (form.current) {
+      emailjs
+        .sendForm(
+          import.meta.env.VITE_EMAILJS_SERVICE_ID,
+          import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+          form.current,
+          {
+            publicKey: import.meta.env.VITE_EMAILJS_PUBLIC_KEY,
+          }
+        )
+        .then(
+          () => {
+            Swal.fire({
+              toast: true,
+              icon: "success",
+              title: "Message sent successfully",
+              showConfirmButton: false,
+              timer: 1500,
+              position: "top-end",
+            });
+          },
+          (error) => {
+            console.log(error.text);
+            Swal.fire({
+              toast: true,
+              icon: "error",
+              title: `Error ${error.text}`,
+              showConfirmButton: false,
+              timer: 1500,
+              position: "top-end",
+            });
+          }
+        )
+        .finally(() => {
+          form.current?.reset();
+        });
+    }
+  };
+
   return (
     <form
-      action=""
+      ref={form}
+      onSubmit={sendEmail}
       className="flex flex-col gap-3 font-bold bg-white p-4 rounded-lg border-2 border-gray-100"
     >
       <label
@@ -11,6 +60,7 @@ function ContactForm() {
         <input
           type="text"
           id="name"
+          name="name"
           placeholder="Name"
           className="peer h-8 w-full border-none bg-transparent p-0 placeholder-transparent focus:border-transparent focus:outline-none focus:ring-0 sm:text-base"
         />
@@ -25,6 +75,7 @@ function ContactForm() {
         <input
           type="email"
           id="email"
+          name="email"
           placeholder="Email"
           className="peer h-8 w-full border-none bg-transparent p-0 placeholder-transparent focus:border-transparent focus:outline-none focus:ring-0 sm:text-base"
         />
@@ -38,10 +89,11 @@ function ContactForm() {
       >
         <textarea
           id="message"
+          name="message"
           placeholder="Message"
-          className="peer h-52 w-full border-none bg-transparent p-0 placeholder-transparent focus:border-transparent focus:outline-none focus:ring-0 sm:text-base"
+          className="peer h-52 pt-2 w-full border-none bg-transparent p-0 placeholder-transparent focus:border-transparent focus:outline-none focus:ring-0 sm:text-base"
         />
-        <span className="absolute start-3 top-3 text-xs text-gray-700 transition-all peer-placeholder-shown:top-3 peer-placeholder-shown:text-base peer-focus:hidden">
+        <span className="absolute start-3 top-1 text-xs text-gray-700 transition-all peer-placeholder-shown:text-base peer-focus:top-1 peer-focus:text-xs">
           Message
         </span>
       </label>
