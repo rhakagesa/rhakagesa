@@ -25,17 +25,17 @@ function Contact() {
         <ul className="flex gap-3 justify-center">
           <li>
             <a href="https://github.com/rhakagesa" target="_blank">
-              <img src="../src/assets/github-logo.svg" alt="Github" />
+              <img src="./public/github-logo.svg" alt="Github" />
             </a>
           </li>
           <li>
             <a href="https://www.linkedin.com/in/rhakagesa/" target="_blank">
-              <img src="../src/assets/linkedin-logo.svg" alt="Linkedin" />
+              <img src="./public/linkedin-logo.svg" alt="Linkedin" />
             </a>
           </li>
           <li>
             <a href="https://www.facebook.com/rhakagesa/" target="_blank">
-              <img src="../src/assets/fb-logo.svg" alt="Facebook" />
+              <img src="./public/fb-logo.svg" alt="Facebook" />
             </a>
           </li>
         </ul>
