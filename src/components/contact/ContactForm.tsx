@@ -31,14 +31,6 @@ function ContactForm() {
           },
           (error) => {
             console.log(error.text);
-            Swal.fire({
-              toast: true,
-              icon: "error",
-              title: `Error ${error.text}`,
-              showConfirmButton: false,
-              timer: 1500,
-              position: "top-end",
-            });
           }
         )
         .finally(() => {
