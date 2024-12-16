@@ -14,7 +14,7 @@ export const workExperience: AboutData[] = [
   {
     jobTitle: "Staff Invetory Control",
     company: "PT. Pupuk Karya Polowijo",
-    imgsrc: "../src/assets/pkp-logo.png",
+    imgsrc: "/pkp-logo.png",
     location: "Gresik, East Java",
     startDate: "August 2022",
     endDate: "December 2024",
@@ -27,7 +27,7 @@ export const workExperience: AboutData[] = [
   {
     jobTitle: "Teacher",
     company: "Kuttab Al-Fatih",
-    imgsrc: "../src/assets/kafmlg-logo.jpg",
+    imgsrc: "/kafmlg-logo.jpg",
     location: "Malang, East Java",
     startDate: "July 2020",
     endDate: "August 2022",
@@ -45,7 +45,7 @@ export const workExperience: AboutData[] = [
   {
     jobTitle: "Administrator",
     company: "LDPS Abu Dzar Al-Ghifari",
-    imgsrc: "../src/assets/alghifari-logo.svg",
+    imgsrc: "/alghifari-logo.svg",
     location: "Malang, East Java",
     startDate: "October 2019",
     endDate: "August 2022",
@@ -63,7 +63,7 @@ export const education: AboutData[] = [
   {
     jobTitle: "Bachelor of Engineering, Computer Engineering",
     company: "Universitas Brawijaya",
-    imgsrc: "../src/assets/ub-logo.jpeg",
+    imgsrc: "/ub-logo.jpeg",
     location: "Malang, East Java",
     startDate: "2016",
     endDate: "2020",
@@ -81,7 +81,7 @@ export const certifications: AboutData[] = [
   {
     jobTitle: "Belajar Back-End Pemula dengan JavaScript",
     company: "Dicoding Indonesia",
-    imgsrc: "../src/assets/dicoding-logo.jpg",
+    imgsrc: "/dicoding-logo.jpg",
     startDate: "Issued Dec 2024",
     endDate: "Expired Dec 2027",
     location: "Online",
@@ -99,7 +99,7 @@ export const certifications: AboutData[] = [
   {
     jobTitle: "Belajar Dasar-Dasar DevOps",
     company: "Dicoding Indonesia",
-    imgsrc: "../src/assets/dicoding-logo.jpg",
+    imgsrc: "/dicoding-logo.jpg",
     startDate: "Issued Oct 2024",
     endDate: "Expired Oct 2027",
     location: "Online",
@@ -115,7 +115,7 @@ export const certifications: AboutData[] = [
   {
     jobTitle: "Belajar Jaringan Komputer untuk Pemula",
     company: "Dicoding Indonesia",
-    imgsrc: "../src/assets/dicoding-logo.jpg",
+    imgsrc: "/dicoding-logo.jpg",
     startDate: "Issued Oct 2024",
     endDate: "Expired Oct 2027",
     location: "Online",
@@ -132,7 +132,7 @@ export const certifications: AboutData[] = [
   {
     jobTitle: "Bootcamp Back-End Developer",
     company: "Kelas.work by Kelas.com",
-    imgsrc: "../src/assets/kelas-logo.jpg",
+    imgsrc: "/kelas-logo.jpg",
     startDate: "Issued Jul 2024",
     endDate: "",
     location: "Online",
@@ -155,7 +155,7 @@ export const certifications: AboutData[] = [
   {
     jobTitle: "Belajar Membuat Aplikasi Web dengan React",
     company: "Dicoding Indonesia",
-    imgsrc: "../src/assets/dicoding-logo.jpg",
+    imgsrc: "/dicoding-logo.jpg",
     startDate: "Issued Oct 2023",
     endDate: "Expired Oct 2026",
     location: "Online",
@@ -171,7 +171,7 @@ export const certifications: AboutData[] = [
   {
     jobTitle: "Belajar Membuat Front-End Web untuk Pemula",
     company: "Dicoding Indonesia",
-    imgsrc: "../src/assets/dicoding-logo.jpg",
+    imgsrc: "/dicoding-logo.jpg",
     startDate: "Issued Oct 2023",
     endDate: "Expired Oct 2026",
     location: "Online",
@@ -186,7 +186,7 @@ export const certifications: AboutData[] = [
   {
     jobTitle: "Belajar Dasar Pemrograman JavaScript",
     company: "Dicoding Indonesia",
-    imgsrc: "../src/assets/dicoding-logo.jpg",
+    imgsrc: "/dicoding-logo.jpg",
     startDate: "Issued Sep 2023",
     endDate: "Expired Sep 2026",
     location: "Online",
@@ -207,7 +207,7 @@ export const certifications: AboutData[] = [
   {
     jobTitle: "Belajar Dasar Pemrograman Web",
     company: "Dicoding Indonesia",
-    imgsrc: "../src/assets/dicoding-logo.jpg",
+    imgsrc: "/dicoding-logo.jpg",
     startDate: "Issued Sep 2023",
     endDate: "Expired Sep 2026",
     location: "Online",
@@ -222,19 +222,19 @@ export const certifications: AboutData[] = [
 ];
 
 export const logosIcon: string[] = [
-  "../src/assets/ts-logo.svg",
-  "../src/assets/nodejs-logo.svg",
-  "../src/assets/react.svg",
-  "../src/assets/vue-logo.svg",
-  "../src/assets/tailwindcss-logo.svg",
-  "../src/assets/expressjs-logo.svg",
-  "../src/assets/postgresql-logo.svg",
-  "../src/assets/mongodb-logo.png",
-  "../src/assets/mysql-logo.svg",
-  "../src/assets/prisma-logo.svg",
-  "../src/assets/sequelize-logo.svg",
-  "../src/assets/jest-logo.png",
-  "../src/assets/postman-logo.png",
-  "../src/assets/git-logo.svg",
-  "../src/assets/vscode-logo.svg",
+  "/ts-logo.svg",
+  "/nodejs-logo.svg",
+  "/react.svg",
+  "/vue-logo.svg",
+  "/tailwindcss-logo.svg",
+  "/expressjs-logo.svg",
+  "/postgresql-logo.svg",
+  "/mongodb-logo.png",
+  "/mysql-logo.svg",
+  "/prisma-logo.svg",
+  "/sequelize-logo.svg",
+  "/jest-logo.png",
+  "/postman-logo.png",
+  "/git-logo.svg",
+  "/vscode-logo.svg",
 ];

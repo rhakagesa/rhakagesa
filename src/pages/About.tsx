@@ -10,7 +10,7 @@ function About() {
     <section className="max-w-screen-xl mx-auto flex flex-col items-center justify-center pt-28 sm:pt-32">
       <ContentContainer title="Summary">
         <Profile
-          imgsrc="../src/assets/pp-img-2.png"
+          imgsrc="/pp-img-2.png"
           title="Rhaka Gemilang Sentosa"
           desc="Hello everyone, my name is Rhaka, and I currently live in Gresik, East Java. 
           I am a self-taught web developer with over 1 year of experience and a Computer Engineering graduate with 5 years of work experience outside my field of study. 
