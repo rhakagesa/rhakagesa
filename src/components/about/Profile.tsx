@@ -20,7 +20,7 @@ function Profile({
           {title}
         </h3>
 
-        <p className="text-xs sm:text-base text-gray-700 text-justify leading-tight">
+        <p className="text-sm sm:text-base text-gray-700 text-justify leading-tight">
           {desc}
         </p>
       </div>

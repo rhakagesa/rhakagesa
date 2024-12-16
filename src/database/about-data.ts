@@ -5,7 +5,7 @@ export interface AboutData {
   location?: string;
   startDate: string;
   endDate: string;
-  jobDesc: string[] ;
+  jobDesc: string[];
   link?: string;
   credentials?: string;
 }
@@ -71,14 +71,32 @@ export const education: AboutData[] = [
       "GPA 3.58/4.00",
       "Faculty of Computer Science",
       "Majoring in Computer Engineering",
-      "Thesis : Deteksi Pergerakan Bola Mata untuk Pemilihan Empat Menu Menggunakan Metode Facial Landmark dengan Ekstraksi Fitur LBP dan Klasifikasi K-NN"
+      "Thesis : Deteksi Pergerakan Bola Mata untuk Pemilihan Empat Menu Menggunakan Metode Facial Landmark dengan Ekstraksi Fitur LBP dan Klasifikasi K-NN",
     ],
-    link: "https://j-ptiik.ub.ac.id/index.php/j-ptiik/article/view/7157/3454"
+    link: "https://j-ptiik.ub.ac.id/index.php/j-ptiik/article/view/7157/3454",
   },
 ];
 
 export const certifications: AboutData[] = [
-   {
+  {
+    jobTitle: "Belajar Back-End Pemula dengan JavaScript",
+    company: "Dicoding Indonesia",
+    imgsrc: "../src/assets/dicoding-logo.jpg",
+    startDate: "Issued Dec 2024",
+    endDate: "Expired Dec 2027",
+    location: "Online",
+    credentials: "1OP84O7N2ZQK",
+    jobDesc: [
+      "Introduction to Back-End",
+      "Back-End Fundamentals",
+      "Node.js",
+      "Building Web Service with Node.js",
+      "Deploy Web Service with AWS EC2",
+      "Consume and Test RESTful API with Postman",
+    ],
+    link: "https://www.dicoding.com/certificates/1OP84O7N2ZQK",
+  },
+  {
     jobTitle: "Belajar Dasar-Dasar DevOps",
     company: "Dicoding Indonesia",
     imgsrc: "../src/assets/dicoding-logo.jpg",
@@ -87,9 +105,12 @@ export const certifications: AboutData[] = [
     location: "Online",
     credentials: "07Z6485DWPQR",
     jobDesc: [
-      "Introduction to DevOps", "DevOps Principles", "CALMS Framework", "DevOps Practices",
+      "Introduction to DevOps",
+      "DevOps Principles",
+      "CALMS Framework",
+      "DevOps Practices",
     ],
-    link: "https://www.dicoding.com/certificates/07Z6485DWPQR"
+    link: "https://www.dicoding.com/certificates/07Z6485DWPQR",
   },
   {
     jobTitle: "Belajar Jaringan Komputer untuk Pemula",
@@ -100,9 +121,13 @@ export const certifications: AboutData[] = [
     location: "Online",
     credentials: "1RXY2LWW1XVM",
     jobDesc: [
-      "Basic Networking Concepts", "Network Models", "IP Address", "Domain Name System", "Network Security",
+      "Basic Networking Concepts",
+      "Network Models",
+      "IP Address",
+      "Domain Name System",
+      "Network Security",
     ],
-    link: "https://www.dicoding.com/certificates/1RXY2LWW1XVM"
+    link: "https://www.dicoding.com/certificates/1RXY2LWW1XVM",
   },
   {
     jobTitle: "Bootcamp Back-End Developer",
@@ -113,9 +138,19 @@ export const certifications: AboutData[] = [
     location: "Online",
     credentials: "CERT-051C3AEB",
     jobDesc: [
-      "Introduction to Back-End Development in Web Development", "Git Commands", "Fundamental JavaScript", "Database using PostgreSQL", "Using ORM with Sequelize", "Build a RESTful API with ExpressJS", "Using EJS for Template Engine","Authentication and Authorization using JWT", "Write API Documentation with Markdown", "TDD with Jest", "Testing API with Postman"
+      "Introduction to Back-End Development in Web Development",
+      "Git Commands",
+      "Fundamental JavaScript",
+      "Database using PostgreSQL",
+      "Using ORM with Sequelize",
+      "Build a RESTful API with ExpressJS",
+      "Using EJS for Template Engine",
+      "Authentication and Authorization using JWT",
+      "Write API Documentation with Markdown",
+      "TDD with Jest",
+      "Testing API with Postman",
     ],
-    link: "https://drive.google.com/file/d/1QOuNiPsrJszxrS3IRcrsW5QDmhhqFX_M/view?usp=sharing"
+    link: "https://drive.google.com/file/d/1QOuNiPsrJszxrS3IRcrsW5QDmhhqFX_M/view?usp=sharing",
   },
   {
     jobTitle: "Belajar Membuat Aplikasi Web dengan React",
@@ -126,9 +161,12 @@ export const certifications: AboutData[] = [
     location: "Online",
     credentials: "EYX4YK7OJZDL",
     jobDesc: [
-      "Introduction to React", "Basic Concepts of React", "React UI Components", "Stateful Components"
+      "Introduction to React",
+      "Basic Concepts of React",
+      "React UI Components",
+      "Stateful Components",
     ],
-    link: "https://www.dicoding.com/certificates/EYX4YK7OJZDL"
+    link: "https://www.dicoding.com/certificates/EYX4YK7OJZDL",
   },
   {
     jobTitle: "Belajar Membuat Front-End Web untuk Pemula",
@@ -139,9 +177,11 @@ export const certifications: AboutData[] = [
     location: "Online",
     credentials: "KEXLLYKN0XG2",
     jobDesc: [
-      "Browser Object Model and DOM Manipulation", "Event Handling", "Data Storage with Web Storage"
+      "Browser Object Model and DOM Manipulation",
+      "Event Handling",
+      "Data Storage with Web Storage",
     ],
-    link: "https://www.dicoding.com/certificates/KEXLLYKN0XG2"
+    link: "https://www.dicoding.com/certificates/KEXLLYKN0XG2",
   },
   {
     jobTitle: "Belajar Dasar Pemrograman JavaScript",
@@ -152,9 +192,17 @@ export const certifications: AboutData[] = [
     location: "Online",
     credentials: "81P27VO6JZOY",
     jobDesc: [
-      "Introduction and Fundamentals of JavaScript ", "Data Structure", "Object Oriented Programming", "Functional Programming", "Module", "Error Handling", "Asynchronous Programming", "Node Package Manager", "JavaScript Testing",
+      "Introduction and Fundamentals of JavaScript ",
+      "Data Structure",
+      "Object Oriented Programming",
+      "Functional Programming",
+      "Module",
+      "Error Handling",
+      "Asynchronous Programming",
+      "Node Package Manager",
+      "JavaScript Testing",
     ],
-    link: "https://www.dicoding.com/certificates/81P27VO6JZOY"
+    link: "https://www.dicoding.com/certificates/81P27VO6JZOY",
   },
   {
     jobTitle: "Belajar Dasar Pemrograman Web",
@@ -165,14 +213,15 @@ export const certifications: AboutData[] = [
     location: "Online",
     credentials: "53XE4NE0RZRN",
     jobDesc: [
-      "Introduction and Fundamentals of HTML", " Introduction and Fundamentals of CSS", "Layout Reponsive with Flexbox",
+      "Introduction and Fundamentals of HTML",
+      " Introduction and Fundamentals of CSS",
+      "Layout Reponsive with Flexbox",
     ],
-    link: "https://www.dicoding.com/certificates/53XE4NE0RZRN"
+    link: "https://www.dicoding.com/certificates/53XE4NE0RZRN",
   },
+];
 
-]
-
-export const logosIcon: string[]= [
+export const logosIcon: string[] = [
   "../src/assets/ts-logo.svg",
   "../src/assets/nodejs-logo.svg",
   "../src/assets/react.svg",
@@ -188,4 +237,4 @@ export const logosIcon: string[]= [
   "../src/assets/postman-logo.png",
   "../src/assets/git-logo.svg",
   "../src/assets/vscode-logo.svg",
-]
+];

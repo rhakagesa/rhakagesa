@@ -28,7 +28,7 @@ function NavigationBar() {
             resource.map((item, index) => (
               <Link
                 to={item.path}
-                className="text-xs sm:text-lg font-bold text-gray-500 hover:text-gray-800"
+                className="text-sm sm:text-lg font-bold text-gray-500 hover:text-gray-800"
                 key={index}
               >
                 {item.name}
