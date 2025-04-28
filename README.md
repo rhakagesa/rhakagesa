@@ -1,50 +1,47 @@
-# React + TypeScript + Vite
+# Welcome to My GitHub! 👋  
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Hi there! I'm **Rhaka**, a passionate developer on a journey to build impactful and innovative projects. Whether you're here to explore my repositories, collaborate, or just say hi, you're in the right place!  
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🔥 About Me  
 
-## Expanding the ESLint configuration
+🌱 **Currently learning:** PHP and backend microservice architecture  
+💻 **Tech Stack:** JavaScript, React, Vue, Node.js, Prisma, Supabase, Express  
+🌟 **Interests:** Frontend and Backend Development  
+🌍 **Based in:** Indonesia  
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+---
 
-- Configure the top-level `parserOptions` property like this:
+## 📌 Highlights  
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+Here are a few projects I'm proud of:  
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+- **Proyeksi Kirim**  
+  A web app for monitoring deliveries, built with Vue and Express.
+  
+- **Excel Replacement App**  
+  An app designed to replace manual Excel input by automating weekly dashboard generation and improving efficiency.  
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+---
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+## 📫 How to Reach Me  
+
+- **Email:** [rhakagesa@gmail.com](mailto:rhakagesa@gmail.com)  
+- **LinkedIn:** [linkedin.com/in/rhakagesa](https://linkedin.com/in/rhakagesa)
+- **Facebook:** [facebook.com/rhakagesa](https://facebook.com/rhakagesa)  
+
+---
+
+## 💡 Fun Facts  
+
+🎓 I'm transitioning to full-stack development after 5+ years in a different field.  
+✨ My current goal is to simplify processes and improve efficiency with tech solutions.  
+
+---
+
+## 🚀 Let's Collaborate!  
+
+I'm always open to contributing to exciting projects or collaborating on new ideas. Feel free to check out my repos and drop me a message if you'd like to work together!  
+
+Thanks for visiting!  
