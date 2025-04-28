@@ -21,7 +21,7 @@ function Home() {
   }, []);
 
   return (
-    <section className="max-w-screen-xl h-screen mx-auto flex items-center">
+    <section className="max-w-(--breakpoint-xl) h-screen mx-auto flex items-center">
       <div className="mx-auto max-w-xl text-center">
         <h1
           className={`${effectTransitionLeft} ${transitionAndDuration} text-3xl text-gray-500 font-extrabold sm:text-5xl `}

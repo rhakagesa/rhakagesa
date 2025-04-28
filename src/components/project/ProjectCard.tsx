@@ -7,7 +7,7 @@ function ProjectCard({ data }: { data: ProjectData[] }) {
           <a href={item.link} target="_blank">
             <div
               key={index}
-              className="rounded-xl bg-gradient-to-r from-gray-300 via-gray-500 to-gray-600 p-0.5 shadow-sm transition hover:to-gray-400 hover:from-gray-200 hover:via-gray-300 hover:shadow-xl"
+              className="rounded-xl bg-linear-to-r from-gray-300 via-gray-500 to-gray-600 p-0.5 shadow-xs transition hover:to-gray-400 hover:from-gray-200 hover:via-gray-300 hover:shadow-xl"
             >
               <div className="flex flex-col rounded-lg bg-white p-4 sm:p-6">
                 <div className="flex justify-between items-center">

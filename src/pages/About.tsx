@@ -7,7 +7,7 @@ import WorkExperience from "../components/about/WorkExperience";
 
 function About() {
   return (
-    <section className="max-w-screen-xl mx-auto flex flex-col items-center justify-center pt-28 sm:pt-32">
+    <section className="max-w-(--breakpoint-xl) mx-auto flex flex-col items-center justify-center pt-28 sm:pt-32">
       <ContentContainer title="Summary">
         <Profile
           imgsrc="/pp-img-2.png"

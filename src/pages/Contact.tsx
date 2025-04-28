@@ -12,7 +12,7 @@ function Contact() {
   const transitionAndDuration: string = "transition-all duration-1000";
 
   return (
-    <section className="max-w-screen-xl mx-auto flex flex-col items-center justify-center pt-28 sm:pt-32">
+    <section className="max-w-(--breakpoint-xl) mx-auto flex flex-col items-center justify-center pt-28 sm:pt-32">
       <div
         ref={ref}
         className={`max-w-xl my-5 text-center mx-auto ${effectTransitionLeft} ${transitionAndDuration}`}
